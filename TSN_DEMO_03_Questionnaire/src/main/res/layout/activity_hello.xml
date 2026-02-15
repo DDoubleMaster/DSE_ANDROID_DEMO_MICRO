@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background1"
+        android:scaleType="centerCrop" />
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcomeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ТАВЕРНА ГЕРОЕВ"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#B87C4C"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/welcomeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Сделайте своего собственного \nRPG персонажа"
+                android:textColor="#C4A484"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                android:gravity="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="20dp"
+        android:text="ПОГНАЛИ"
+        android:backgroundTint="#B87C4C"
+        android:onClick="onStartButtonClick" />
+
+</RelativeLayout>

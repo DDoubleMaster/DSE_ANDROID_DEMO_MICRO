@@ -1,5 +1,9 @@
 package kz.talipovsn.questionnaire;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
 
@@ -25,15 +29,19 @@ public class ResultActivity extends AppCompatActivity {
         editText.setText("");
 
         // Добавление данных в компонент "editText"
-        editText.append(String.format("%s %s \n", getString(R.string.Вы), getIntent().getStringExtra("fio")));
-        editText.append(String.format("%s %s \n", getString(R.string.Ваш_пол), getIntent().getStringExtra("gender")));
-        editText.append(String.format("%s %s \n", getString(R.string.Ваше_образование), getIntent().getStringExtra("edu")));
-        editText.append(String.format("%s %s \n", getString(R.string.Страна), getIntent().getStringExtra("country")));
+        editText.append(String.format("%s %s \n", "Ваш персонаж:", getIntent().getStringExtra("fio")));
+        editText.append(String.format("%s %s \n", "Класс:", getIntent().getStringExtra("edu")));
+        editText.append(String.format("%s %s \n", "Уникальная черта:", getIntent().getStringExtra("country")));
+        editText.append(String.format("%s %s \n", "Тип:", getIntent().getStringExtra("gender")));
     }
 
     // МЕТОД ДЛЯ КНОПКИ НАЗАД
     public void onBack(View v) {
-        setResult(RESULT_OK);
+        Intent intent = new Intent(ResultActivity.this, HelloActivity.class);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+
+        this.startActivity(intent);
         finish();
     }
 

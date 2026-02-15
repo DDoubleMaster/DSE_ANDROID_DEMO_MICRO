@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Подготовка параметров для второго окна
         intent.putExtra("fio", editText.getText().toString());
-        intent.putExtra("gender", checkBox.isChecked() ? getString(R.string.Мужчина) : getString(R.string.Женщина));
+        intent.putExtra("gender", checkBox.isChecked() ? "Грешник" : "Обычный");
         intent.putExtra("edu", selectRadioButton.getText());
         intent.putExtra("country", spinner.getSelectedItem().toString());
 

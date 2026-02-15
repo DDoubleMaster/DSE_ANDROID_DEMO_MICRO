@@ -2,11 +2,12 @@
 
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
         <!-- Цветовые акценты -->
-        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimary">#A76545</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:textColor">#A76545</item>
 
-        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondary">#FFA55D</item>
         <item name="colorOnSecondary">@android:color/black</item>
 
         <!-- Настройка статус-бара -->
