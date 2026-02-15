@@ -25,6 +25,20 @@
 
         <!-- Текстовая надпись -->
         <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x="/>
+
+        <!-- Поле ввода числа со знаком для "a" -->
+        <EditText
+            android:id="@+id/editText_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number|text"/>
+
+        <!-- Текстовая надпись -->
+        <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,21 +62,6 @@
         <!-- Поле ввода числа со знаком для "b" -->
         <EditText
             android:id="@+id/editText_b"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number|text"/>
-
-        <!-- Текстовая надпись -->
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15sp"
-            android:text="c="/>
-
-        <!-- Поле ввода числа со знаком для "c" -->
-        <EditText
-            android:id="@+id/editText_c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number|text"/>
@@ -93,20 +92,12 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <!-- Текстовая надпись для отображения "x1" -->
+        <!-- Текстовая надпись для отображения "y" -->
         <TextView
-            android:id="@+id/textView_x1"
+            android:id="@+id/textView_y"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="x1="/>
-
-        <!-- Текстовая надпись для отображения "x2" -->
-        <TextView
-            android:id="@+id/textView_x2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="15sp"
-            android:text="x2="/>
+            android:text="y="/>
 
     </LinearLayout>
 
