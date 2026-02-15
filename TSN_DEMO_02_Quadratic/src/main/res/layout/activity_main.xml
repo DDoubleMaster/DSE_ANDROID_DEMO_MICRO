@@ -8,6 +8,19 @@
     android:gravity="center_vertical"
     android:stretchColumns="*">
 
+    <!-- Строка таблицы 0 -->
+    <TableRow>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_span="6"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/formula"
+            android:contentDescription="@string/imageInfo" />
+    </TableRow>
+
     <!-- Строка таблицы 1 -->
     <TableRow>
 
